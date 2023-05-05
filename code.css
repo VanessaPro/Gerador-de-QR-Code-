@@ -10,10 +10,14 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #f7f7f7;
+    background: linear-gradient(90deg, #dcd1cd 35%, rgba(0,212,255,1) 100%);
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    height: 260px;
+    background: #fff;
+    max-width: 410px;
+    border-radius: 7px;
+    padding: 16px 25px;
 }
+
