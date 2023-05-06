@@ -10,14 +10,45 @@ body{
     align-items: center;
     justify-content: center;
     background-color: #f7f7f7;
-    background: linear-gradient(90deg, #dcd1cd 35%, rgba(0,212,255,1) 100%);
+    background: radial-gradient(Peachpuff, pink, skyblue);
 }
 
-main{
-    height: 260px;
+.wrapper{
+    height: 160px;
     background: #fff;
     max-width: 410px;
     border-radius: 7px;
     padding: 16px 25px;
+    transition: height 0.5s ease;
+}
+.wrapper.active{
+    height: 380px;
 }
 
+p{margin-top: 5px;}
+
+.form button{
+    color:#fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+    background: #5dc489;
+}
+
+.form input{
+    font-size: 17px;
+    padding: 0 17px;
+    border: 1px solid #999;
+}
+
+.wrapper .img{
+    width: 200px;
+    height: auto;
+    margin-top: 15px;
+}
+.wrapper.active .qr-code{
+    opacity: 1;
+    pointer-events: auto;
+    transition: apacity 0.5s ease;
+    text-align: center;
+}
